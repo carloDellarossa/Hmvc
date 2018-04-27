@@ -12,9 +12,13 @@ class Templates extends MX_Controller {
     }
 
     public function templateTienda(){
-        $this->load->view('tienda/template-top');
+
+        $this->load->model('Categorias');
+        $data['categorias'] = $this->Categorias->catArrayLocal();
+        
+        $this->load->view('tienda/template-top',$data);
         $this->load->view('tienda/carrusel');
-        $this->load->view('tienda/paginacion');
+        //$this->load->view('tienda/paginacion');
         $this->load->view('tienda/template-btm');
 
     }

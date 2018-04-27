@@ -29,7 +29,7 @@
     <link rel="shortcut icon" href="<?php echo base_url('img/dur.png');?>" type="image/x-icon" />
     <link rel="canonical" href=""/>
     <script>var base_url = '<?php echo base_url(); ?>';</script>
-    <script src="<?php echo base_url('js/jquery-3.3.1.min.js');?>"></script>
+    <script src="<?php echo base_url('js/jquery.min.js');?>"></script>
     <script src="<?php echo base_url('js/bootstrap.min.js');?>"></script>
     <script src="<?php echo base_url('js/principal.js');?>"></script>
     <script src="<?php echo base_url('js/slick.min.js');?>" type="text/javascript"></script>
@@ -104,8 +104,10 @@
                  ?>
                 <li class="dropdown listaCat">
                 <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button"><?php echo $keys[$i] ;?></a>
+          
                 <ul class="dropdown-menu multi-level">
                   <?php
+                  
                   foreach($categorias[$keys[$i]] as $key => $value) {
                     ?>
                     <li class="dropdown-item dropdown-submenu">
@@ -137,7 +139,7 @@
       		    </div> <!-- termina menu-->
               <div id="contenidoCarro" class=" carro col col-3" >
                 <!-- Carro -->
-                <?php $this->load->view('listas/listaCarro'); ?>  
+                <?php //$this->load->view('listas/listaCarro'); ?>  
               </div>
         </div><!-- termina row -->
     </div> <!-- termina contenedor-->
