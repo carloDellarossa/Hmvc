@@ -7,7 +7,12 @@ class Templates extends MX_Controller {
         parent::__contruct();
     }
     
+    public function index(){
+        $this->templateTienda();
+    }
+
     public function templateAdmin($data){
+
         $this->load->view('admin/panel',$data);
     }
 
@@ -23,8 +28,19 @@ class Templates extends MX_Controller {
 
     }
 
-    public function index(){
-        $this->load->view('admin/panel');
+    public function megaMenu (){
+        $this->load->model('Categorias');
+        $data['categorias'] = $this->Categorias->catArrayLocal();
+
+        $this->load->view('tienda/b4megamenu',$data);
     }
+
+    public function sideMenu (){
+        $this->load->model('Categorias');
+        $data['categorias'] = $this->Categorias->catArrayLocal();
+        
+        $this->load->view('tienda/sidemenu',$data);
+    }
+ 
 
 }

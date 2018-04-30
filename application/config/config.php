@@ -35,7 +35,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'http://localhost/Hmvc';
+$config['index_page'] = 'http://localhost/Hmvc/index.php/Templates/';
 
 /*
 |--------------------------------------------------------------------------

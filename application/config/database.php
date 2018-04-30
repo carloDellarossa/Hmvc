@@ -169,7 +169,7 @@ $db['temuco'] = array(
 
 
 
-$db['default'] = array(
+$db['local'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'postgres',
@@ -239,7 +239,7 @@ $db['davidtest'] = array(
 
 
 
-$db['durban'] = array(
+$db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => '192.168.60.10',
 	'username' => 'postgres',
