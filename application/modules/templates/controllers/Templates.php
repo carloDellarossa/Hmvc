@@ -23,6 +23,7 @@ class Templates extends MX_Controller {
         
         $this->load->view('tienda/template-top',$data);
         $this->load->view('tienda/carrusel');
+        $this->load->view('tienda/listas/listaCarro');
         //$this->load->view('tienda/paginacion');
         $this->load->view('tienda/template-btm');
 
