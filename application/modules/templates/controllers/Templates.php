@@ -11,9 +11,9 @@ class Templates extends MX_Controller {
         $this->templateTienda();
     }
 
-    public function templateAdmin($data){
+    public function templateAdmin(){
 
-        $this->load->view('admin/panel',$data);
+        $this->load->view('admin/panel');
     }
 
     public function templateTienda(){
