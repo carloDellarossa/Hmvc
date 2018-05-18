@@ -33,7 +33,8 @@ class Templates extends MX_Controller {
         $this->load->model('Categorias');
         $data['categorias'] = $this->Categorias->catArrayLocal();
 
-        $this->load->view('tienda/b4megamenu',$data);
+        //$this->load->view('tienda/b4megamenu',$data);
+        $this->load->view('tienda/testcat',$data);
     }
 
     public function sideMenu (){
